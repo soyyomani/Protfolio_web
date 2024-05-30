@@ -1,0 +1,94 @@
+.mywork {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 70px 10%;
+}
+
+.mywork-format {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+    padding: 30px;
+    border-radius: 10px;
+    border: 2px solid #7E57C2; /* Replaced white with a lavender color */
+    transition: 0.4s;
+    cursor: pointer;
+}
+
+.mywork-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.mywork-format h3 {
+    font-size: 22px;
+    font-weight: 600;
+}
+
+.mywork-format h2 {
+    font-size: 30px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #FF4081, #18FFFF); /* Gradient with pink and cyan */
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+.mywork-format p {
+    color: #E0E0E0; /* Light gray text */
+    font-size: 20px;
+    line-height: 30px;
+    max-width: 300px;
+}
+
+.mywork-readmore {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    margin-top: 20px;
+}
+
+.mywork-readmore img {
+    width: 20px;
+}
+
+.mywork-format:hover {
+    border: 2px solid #FF9800; /* Bright orange on hover */
+    background-image: linear-gradient(45deg, #4CAF50, #FF5722); /* Green and deep orange gradient */
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+
+@media (max-width: 768px) {
+    .mywork {
+        align-items: start;
+        gap: 70px;
+        margin: 20px 6%;
+    }
+
+    .mywork-format {
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .mywork-format h2 {
+        font-size: 20px;
+    }
+
+    .mywork-format p {
+        font-size: 16px;
+        line-height: 26px;
+        max-width: 300px;
+    }
+
+    .mywork-container {
+        grid-template-columns: 1fr 1fr;
+        gap: 20px;
+    }
+}
